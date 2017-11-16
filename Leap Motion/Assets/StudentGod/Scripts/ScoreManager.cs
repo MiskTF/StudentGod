@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour{
 
+    /*
     public static Score gameScore;
-
-    class Score() {
+    public class Score() {
         public static int score  = 0;
         public static int hits   = 0;
         public static int lates  = 0;
@@ -40,4 +40,5 @@ public class ScoreManager : MonoBehaviour{
     public static Score GetScore() {
         return gameScore;
     }
+    */
 }

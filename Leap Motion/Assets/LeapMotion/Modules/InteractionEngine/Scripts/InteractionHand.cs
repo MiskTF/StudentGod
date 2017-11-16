@@ -337,7 +337,7 @@ namespace Leap.Unity.Interaction {
 
     #region Contact Controller Implementation
 
-    private const int NUM_FINGERS = 5;
+    private const int NUM_FINGERS = 2;
     private const int BONES_PER_FINGER = 3;
 
     private ContactBone[] _contactBones;

@@ -14,7 +14,7 @@ public class Bucket : MonoBehaviour {
 
     void OnCollisionEnter(Collision col) {
         if (col.collider.tag == tag) {
-            col.gameObject.SetActive(false);
+            EventManager.FireOnStudentHit (col.gameObject);
             StartCoroutine(ScalingAnimation ());
         }
      }

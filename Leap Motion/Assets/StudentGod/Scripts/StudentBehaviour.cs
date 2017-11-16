@@ -13,6 +13,7 @@ public class StudentBehaviour : InteractionBehaviour {
     protected override void Start () {
         base.Start ();
         prevGrabbed = false;
+        OnGraspBegin += SetTrigger;
         OnGraspEnd += SetGrabbed;
         count = 9;
         StartCoroutine (Countdown());
@@ -23,8 +24,13 @@ public class StudentBehaviour : InteractionBehaviour {
 		
 	}
 
+    void SetTrigger() {
+        this.GetComponent<BoxCollider> ().isTrigger = true;
+    }
+
     void SetGrabbed() {
         prevGrabbed = true;
+        StartCoroutine (delayedCollider());
     }
 
     void OnCollisionEnter(Collision col) {
@@ -50,5 +56,11 @@ public class StudentBehaviour : InteractionBehaviour {
             yield return new WaitForSeconds (1f);
         }
         EventManager.FireOnStudentLate (this.gameObject);
+    }
+
+    IEnumerator delayedCollider() {
+        yield return new WaitForSeconds (0.1f);
+        this.GetComponent<BoxCollider> ().isTrigger = false;
+        Debug.Log ("Release!");
     }
 }

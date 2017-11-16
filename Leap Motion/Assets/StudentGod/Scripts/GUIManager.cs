@@ -19,7 +19,7 @@ public class GUIManager : MonoBehaviour {
 
     void OnGUI() {
 
-        ScoreManager.Score score = ScoreManager.GetScore ();
+        //ScoreManager.Score score = ScoreManager.GetScore ();
 
         //ScoreManager.gameScore.
 
