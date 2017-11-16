@@ -61,6 +61,5 @@ public class StudentBehaviour : InteractionBehaviour {
     IEnumerator delayedCollider() {
         yield return new WaitForSeconds (0.1f);
         this.GetComponent<BoxCollider> ().isTrigger = false;
-        Debug.Log ("Release!");
     }
 }

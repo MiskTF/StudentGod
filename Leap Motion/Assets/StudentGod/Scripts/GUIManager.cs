@@ -18,14 +18,10 @@ public class GUIManager : MonoBehaviour {
     }
 
     void OnGUI() {
-
-        //ScoreManager.Score score = ScoreManager.GetScore ();
-
-        //ScoreManager.gameScore.
-
-        int hits = 5;
-        int lates = 6;
-        int misses = 10;
+        
+        int hits = ScoreManager.Score.hits;
+        int lates = ScoreManager.Score.lates;
+        int misses = ScoreManager.Score.misses;
         string text = "Hits  : " + hits  + "\n" +
                       "Lates : " + lates + "\n" +
                       "Misses: " + misses;

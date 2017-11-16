@@ -666,15 +666,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 594835530}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aef661d193e6414fb000e8e02a08044, type: 3}
+  m_Script: {fileID: 11500000, guid: d1266c089f1f3434c84782d26fabb977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubes:
-  - {fileID: 0}
-  - {fileID: 285552719}
-  - {fileID: 1668921945}
 --- !u!4 &594835532
 Transform:
   m_ObjectHideFlags: 0

@@ -23,14 +23,14 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public static void FireOnStudentLate(GameObject student)
+    public static void FireOnStudentHit(GameObject student)
     {
         if (OnStudentHit != null)
         {
             OnStudentHit(student);
         }
     }
-    public static void FireOnStudentHit(GameObject student)
+    public static void FireOnStudentLate(GameObject student)
     {
         if (OnStudentLate != null)
         {
