@@ -34,7 +34,7 @@ public class StudentManager : MonoBehaviour {
                 int spawn = Random.Range (0, spawnPoints.Length);
                 GenerateStudent (number, spawn);
             }
-            yield return new WaitForSeconds (2f);
+            yield return new WaitForSeconds (1f);
         }
     }
 

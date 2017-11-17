@@ -15,7 +15,7 @@ public class StudentBehaviour : InteractionBehaviour {
         prevGrabbed = false;
         OnGraspBegin += SetTrigger;
         OnGraspEnd += SetGrabbed;
-        count = 9;
+        count = 15;
         StartCoroutine (Countdown());
     }
 	
