@@ -8,6 +8,8 @@ TagManager:
   - Color2
   - Color3
   - Ground
+  - Color4
+  - Color5
   layers:
   - Default
   - TransparentFX
