@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 1185873071}
   m_Layer: 0
   m_Name: Color3_Building
-  m_TagString: Color3
+  m_TagString: Color4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1577,7 +1577,7 @@ GameObject:
   - component: {fileID: 1747664221}
   m_Layer: 0
   m_Name: Color2_Building
-  m_TagString: Color2
+  m_TagString: Color1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 1863956941}
   m_Layer: 0
   m_Name: Color1_Building
-  m_TagString: Color1
+  m_TagString: Color2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
