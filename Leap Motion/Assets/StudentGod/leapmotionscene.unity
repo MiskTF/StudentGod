@@ -1396,10 +1396,10 @@ MonoBehaviour:
   - Color4
   - Color5
   colors:
-  - {fileID: 2100000, guid: 60d1c6190285770498ed68c8320b417b, type: 2}
   - {fileID: 2100000, guid: ac6eb96c9164d264e873f0f2d7473295, type: 2}
-  - {fileID: 2100000, guid: 1832279b3a250ae4c8b854acceb4c0aa, type: 2}
+  - {fileID: 2100000, guid: 60d1c6190285770498ed68c8320b417b, type: 2}
   - {fileID: 2100000, guid: eeedd14ae27a42f48b5fd90e34eae890, type: 2}
+  - {fileID: 2100000, guid: 1832279b3a250ae4c8b854acceb4c0aa, type: 2}
   - {fileID: 2100000, guid: 558d624e545ea004d84635ac4931dc17, type: 2}
   spawnPoints:
   - {fileID: 733189840}
