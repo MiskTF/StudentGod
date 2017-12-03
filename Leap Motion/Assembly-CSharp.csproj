@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Initializer.cs" />
      <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SlidingMax.cs" />
      <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedFloat.cs" />
      <Compile Include="Assets\LeapMotion\Core\Scripts\Algorithms\SmoothedQuaternion.cs" />
@@ -415,6 +414,7 @@
      <Compile Include="Assets\StudentGod\Scripts\CubeReset.cs" />
      <Compile Include="Assets\StudentGod\Scripts\EventManager.cs" />
      <Compile Include="Assets\StudentGod\Scripts\GUIManager.cs" />
+     <Compile Include="Assets\StudentGod\Scripts\Initializer.cs" />
      <Compile Include="Assets\StudentGod\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\StudentGod\Scripts\StudentBehaviour.cs" />
      <Compile Include="Assets\StudentGod\Scripts\StudentManager.cs" />
