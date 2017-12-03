@@ -46,8 +46,8 @@ public class StudentBehaviour : InteractionBehaviour {
     }
 
     void OnGUI() {
-        Vector2 worldPoint = Camera.main.WorldToScreenPoint (transform.position);
-        GUI.Label(new Rect(worldPoint.x-30, (Screen.height - worldPoint.y) - 130, 200,100),"" + count, style);
+//        Vector2 worldPoint = Camera.main.WorldToScreenPoint (transform.position);
+  //      GUI.Label(new Rect(worldPoint.x-30, (Screen.height - worldPoint.y) - 130, 200,100),"" + count, style);
     }
 
     IEnumerator Countdown() {

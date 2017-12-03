@@ -122,14 +122,27 @@
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\UI\Editor\InteractionButtonEditor.cs" />
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\UI\Editor\InteractionSliderEditor.cs" />
      <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\Editor\InteractionControllerSwitcherEditor.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_Settings.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_SkyboxEditor.cs" />
+     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\GraphicRenderer.cginc" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
      <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\InternalPackShader.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\BakedRenderer.cginc" />
+     <None Include="Assets\trinusLib\Resources\text_en.txt" />
      <None Include="Assets\LeapMotion\Core\readme.txt" />
      <None Include="Assets\LeapMotion\Core\Resources\RuntimeGizmos.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\BakedSurface.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+     <None Include="Assets\trinusLib\Resources\text_ru.txt" />
+     <None Include="Assets\trinusLib\Resources\text_es.txt" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\DynamicSurfaceTransparent.shader" />
      <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\DynamicRenderer.cginc" />
@@ -138,15 +151,25 @@
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\DynamicUnlit.shader" />
      <None Include="Assets\LeapMotion\Core\Resources\ThresholdOverlay.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\BakedUnlit.shader" />
+     <None Include="Assets\trinusLib\Resources\lensPresets.txt" />
      <None Include="Assets\LeapMotion\Core\Resources\PassthroughForeground.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\SphericalSpace.cginc" />
      <None Include="Assets\LeapMotion\Core\Resources\PassthroughBackground.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Examples\Shaders\Dynamic_SurfaceExample1.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Examples\Shaders\Baked_SurfaceExample1.shader" />
+     <None Include="Assets\trinusLib\dlls\Newtonsoft.Json.xml" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
      <None Include="Assets\LeapMotion\Core\Version.txt" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
      <None Include="Assets\LeapMotion\Core\Resources\VertexOffsetShader.shader" />
+     <None Include="Assets\SteamVR\readme.txt" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+     <None Include="Assets\trinusLib\Resources\text_pt.txt" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\DynamicUnlitTransparent.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\DynamicText.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -209,6 +232,18 @@
  </Reference>
  <Reference Include="InteractionEngineUtility">
  <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="corelib">
+ <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/corelib.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="verified">
+ <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/verified.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
