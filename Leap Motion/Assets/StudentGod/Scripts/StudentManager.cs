@@ -8,6 +8,8 @@ public class StudentManager : MonoBehaviour {
     public Material[] colors;
     public Transform[] spawnPoints;
     public GameObject studentPrefab;
+    public static int STUDENT_COUNT = 5;
+    public static float STUDENT_SPAWN_TIME = 1f;
 
     int successfulStudents;
     int lateStudents;
@@ -29,12 +31,12 @@ public class StudentManager : MonoBehaviour {
 
     IEnumerator SpawnStudents() {
         while (true) {
-            if (students.Count <= 10) {
+            if (students.Count <= STUDENT_COUNT) {
                 int number = Random.Range (0, colors.Length);
                 int spawn = Random.Range (0, spawnPoints.Length);
                 GenerateStudent (number, spawn);
             }
-            yield return new WaitForSeconds (1f);
+            yield return new WaitForSeconds (STUDENT_SPAWN_TIME);
         }
     }
 
