@@ -432,6 +432,7 @@
      <Compile Include="Assets\trinusLib\Scripts\ui\SampleTrinusUIOnly.cs" />
      <Compile Include="Assets\trinusLib\Scripts\ui\SliderChange.cs" />
      <Compile Include="Assets\trinusLib\Scripts\ui\TrinusUI.cs" />
+     <Compile Include="Assets\TurnButtonBehaviour.cs" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\GraphicRenderer.cginc" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />

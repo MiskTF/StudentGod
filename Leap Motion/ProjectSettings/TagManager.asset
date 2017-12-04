@@ -8,6 +8,13 @@ TagManager:
   - Color_Blue
   - Color_White
   - Color_Red
+  - Color2
+  - Color1
+  - Color3
+  - TurnRight
+  - TurnLeft
+  - Color_Black
+  - Color_Purple
   layers:
   - Default
   - TransparentFX
