@@ -4,15 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Color_Blue
-  - Color_White
   - Color_Red
-  - Color2
-  - Color1
-  - Color3
-  - TurnRight
-  - TurnLeft
+  - Ground
+  - Color_White
+  - Color_Blue
   - Color_Black
   - Color_Purple
   layers:

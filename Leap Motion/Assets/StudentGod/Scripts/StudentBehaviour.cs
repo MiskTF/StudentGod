@@ -15,11 +15,11 @@ public class StudentBehaviour : InteractionBehaviour {
     int waveHash = Animator.StringToHash("wave");
     int wave2Hash = Animator.StringToHash("wave2hands");
 
-    
-   // bool normal = true;
+    */
+   
     bool wave = false;
     bool wave2 = false;
-    int wavingcount = 10;*/
+    int wavingcount = 10;
 
 	// Use this for initialization
     protected override void Start () {
@@ -30,21 +30,25 @@ public class StudentBehaviour : InteractionBehaviour {
         animator = GetComponent<Animator>();
         count = 15;
         StartCoroutine (Countdown());
-       // StartCoroutine(Countwave());
+        StartCoroutine(Countwave());
     }
 	
 	// Update is called once per frame
 	void Update () {
-		/* all of this doesn't work -Eva
+		
         if (wave)
         {
-            animator.SetTrigger(waveHash);
+            animator.Play("wave");
+            wavingcount = 10;
+            StartCoroutine(Countwave());
         }
         if (wave2)
         {
-            animator.SetTrigger(wave2Hash);
+            animator.Play("wave2hands");
+            wavingcount = 10;
+            StartCoroutine(Countwave());
         }
-       */
+      
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk"))
         {
             Vector3 newPosition = transform.position;
@@ -93,7 +97,7 @@ public class StudentBehaviour : InteractionBehaviour {
         }
         EventManager.FireOnStudentLate (this.gameObject);
     }
-	/* all of this doesn't work -Eva
+	
     IEnumerator Countwave()
     {
         wave = false;
@@ -113,7 +117,7 @@ public class StudentBehaviour : InteractionBehaviour {
             wave2=true;
         }
 
-    }*/
+    }
 
     IEnumerator delayedCollider() {
         yield return new WaitForSeconds (0.1f);
