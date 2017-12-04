@@ -8,6 +8,8 @@ TagManager:
   - Color_Blue
   - Color_White
   - Color_Red
+  - Color_Black
+  - Color_Purple
   layers:
   - Default
   - TransparentFX

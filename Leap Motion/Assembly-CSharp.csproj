@@ -496,22 +496,22 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/LeapMotion/Core/Plugins/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/LeapMotion/Core/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
  <Reference Include="InteractionEngineUtility">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/LeapMotion/Modules/InteractionEngine/Plugins/InteractionEngineUtility.dll</HintPath>
  </Reference>
  <Reference Include="corelib">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/corelib.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/trinusLib/dlls/corelib.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/trinusLib/dlls/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/System.Drawing.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/trinusLib/dlls/System.Drawing.dll</HintPath>
  </Reference>
  <Reference Include="verified">
- <HintPath>C:/Users/Admin/Documents/StudentGod/Leap Motion/Assets/trinusLib/dlls/verified.dll</HintPath>
+ <HintPath>C:/Users/evaso/Documents/KAIST/Interactive Computer Graphics/StudentGod/Leap Motion/Assets/trinusLib/dlls/verified.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
