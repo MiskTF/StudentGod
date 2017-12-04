@@ -41,12 +41,10 @@ public class StudentManager : MonoBehaviour {
     }
 
     void GenerateStudent(int number, int spawn) {
-        float rand = Random.Range(0, 360);
-        GameObject newStudent = Instantiate (studentPrefab,spawnPoints[spawn].position, Quaternion.Euler(0,rand,0));
+        GameObject newStudent = Instantiate (studentPrefab,spawnPoints[spawn].position, Quaternion.identity);
         newStudent.tag = tags[number];
         //newStudent.GetComponent<Renderer>().material = colors[number];
         newStudent.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = colors[number];
-        
         students.Add (newStudent);
     }
 

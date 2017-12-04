@@ -8,13 +8,18 @@ public class StudentBehaviour : InteractionBehaviour {
     public GUIStyle style;
     int count;
     Animator animator;
-    public Transform player;
 
-  
+    /* all of this doesn't work -Eva
+    int startJumpHash = Animator.StringToHash("Basejump-up");
+    int idleHash = Animator.StringToHash("idle");
+    int waveHash = Animator.StringToHash("wave");
+    int wave2Hash = Animator.StringToHash("wave2hands");
+
+    */
    
     bool wave = false;
-   // bool wave2 = false;
-    int wavingcount;
+    bool wave2 = false;
+    int wavingcount = 10;
 
 	// Use this for initialization
     protected override void Start () {
@@ -23,9 +28,7 @@ public class StudentBehaviour : InteractionBehaviour {
         OnGraspBegin += SetTrigger;
         OnGraspEnd += SetGrabbed;
         animator = GetComponent<Animator>();
-        player = Camera.main.GetComponent<Transform>();
         count = 15;
-        wavingcount = 3;
         StartCoroutine (Countdown());
         StartCoroutine(Countwave());
     }
@@ -33,39 +36,40 @@ public class StudentBehaviour : InteractionBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        if (wave && !animator.GetCurrentAnimatorStateInfo(0).IsName("wave2hands") && !animator.GetCurrentAnimatorStateInfo(0).IsName("startWaving"))
+        if (wave)
         {
-            transform.LookAt(player);
             animator.Play("wave");
             wavingcount = 10;
             StartCoroutine(Countwave());
         }
-        /*if (wave2)
+        if (wave2)
         {
             animator.Play("wave2hands");
             wavingcount = 10;
             StartCoroutine(Countwave());
-        }*/
+        }
       
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("walk"))
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * animator.GetFloat("WalkSpeed"));
+            Vector3 newPosition = transform.position;
+            newPosition.z += animator.GetFloat("WalkSpeed") * Time.deltaTime;
+            transform.position = newPosition;
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("run"))
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * animator.GetFloat("RunSpeed"));
+            Vector3 newPosition = transform.position;
+            newPosition.z += animator.GetFloat("RunSpeed") * Time.deltaTime;
+            transform.position = newPosition;
         }
         
     }
 
     void SetTrigger() {
         this.GetComponent<BoxCollider> ().isTrigger = true;
-        animator.Play("startWaving");
     }
 
     void SetGrabbed() {
         prevGrabbed = true;
-        animator.Play("jump-down");
         StartCoroutine (delayedCollider());
     }
 
@@ -97,15 +101,13 @@ public class StudentBehaviour : InteractionBehaviour {
     IEnumerator Countwave()
     {
         wave = false;
-        //wave2 = false;
+        wave2 = false;
         while (wavingcount > 0)
         {
             wavingcount--;
             yield return new WaitForSeconds(1f);
         }
-        wave = true;
-
-        /*System.Random randNum = new System.Random();
+        System.Random randNum = new System.Random();
         int test = randNum.Next(11);
         if (test < 5) {
             wave = true;
@@ -113,7 +115,7 @@ public class StudentBehaviour : InteractionBehaviour {
         else
         {
             wave2=true;
-        }*/
+        }
 
     }
 
