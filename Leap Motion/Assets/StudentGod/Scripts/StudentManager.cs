@@ -8,16 +8,16 @@ public class StudentManager : MonoBehaviour {
     public Material[] colors;
     public Transform[] spawnPoints;
     public GameObject studentPrefab;
-    public static int STUDENT_COUNT = 5;
-    public static float STUDENT_SPAWN_TIME = 1f;
+    public static int STUDENT_COUNT = 20;
+    public static float STUDENT_SPAWN_TIME = 3f;
 
     int successfulStudents;
     int lateStudents;
     int failedStudents;
 
     ArrayList students;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         students = new ArrayList ();
         StartCoroutine (SpawnStudents ());
         EventManager.OnStudentHit    += StudentSuccessful;
@@ -26,12 +26,12 @@ public class StudentManager : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        
+
     }
 
     IEnumerator SpawnStudents() {
         while (true) {
-            if (students.Count <= STUDENT_COUNT) {
+            if (students.Count < STUDENT_COUNT) {
                 int number = Random.Range (0, colors.Length);
                 int spawn = Random.Range (0, spawnPoints.Length);
                 GenerateStudent (number, spawn);
@@ -41,10 +41,12 @@ public class StudentManager : MonoBehaviour {
     }
 
     void GenerateStudent(int number, int spawn) {
-        GameObject newStudent = Instantiate (studentPrefab,spawnPoints[spawn].position, Quaternion.identity);
+        float rand = Random.Range(0, 360);
+        GameObject newStudent = Instantiate (studentPrefab,spawnPoints[spawn].position, Quaternion.Euler(0,180,0));
         newStudent.tag = tags[number];
         //newStudent.GetComponent<Renderer>().material = colors[number];
         newStudent.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = colors[number];
+
         students.Add (newStudent);
     }
 

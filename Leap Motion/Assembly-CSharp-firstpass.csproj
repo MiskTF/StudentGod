@@ -98,6 +98,7 @@
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\GraphicRenderer.cginc" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
+     <None Include="Assets\Scoreboard.shader" />
      <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Resources\InternalPackShader.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
@@ -106,6 +107,7 @@
      <None Include="Assets\trinusLib\Resources\text_en.txt" />
      <None Include="Assets\LeapMotion\Core\readme.txt" />
      <None Include="Assets\LeapMotion\Core\Resources\RuntimeGizmos.shader" />
+     <None Include="Assets\TriplanarShader.shader" />
      <None Include="Assets\LeapMotion\Modules\GraphicRenderer\Shaders\BakedSurface.shader" />
      <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
      <None Include="Assets\trinusLib\Resources\text_ru.txt" />
